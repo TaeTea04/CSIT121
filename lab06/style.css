@@ -1,0 +1,111 @@
+
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    color: #000033;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: brown;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* Navigation menu */
+nav {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content: one column on small screens */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    min-width: 0;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #lab02 {
+        grid-column: 1 / -1;
+    }
+}
