@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DBZ Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="tierlist.html">Tier List</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>DBZ Tier List Feedback</h1>
+<form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment"></textarea>
+    <label for="favorite">Who is your favorite character?</label>
+    <select id="favorite" name="favorite">
+        <option>Goku</option>
+        <option>Vegeta</option>
+        <option>Piccolo</option>
+        <option>Krillin</option>
+        <option>Yamcha</option>
+    </select>
+    <p>Is Goku the strongest?</p>
+    <input type="radio" id="yes" name="strongest">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="strongest">
+    <label for="no">No</label>
+    <input type="checkbox" id="move" name="move">
+    <label for="move">I would move someone up a tier</label>
+
+    <button type="submit">Submit</button>
+</form>
+    </body>
+    </html>

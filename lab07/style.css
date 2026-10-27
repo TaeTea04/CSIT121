@@ -1,0 +1,20 @@
+img {
+    width: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: lightblue;
+}
+
+nav a {
+    margin-right: 15px;
+}
