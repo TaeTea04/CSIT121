@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPG Image</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>JPG Image</h1>
+    <div class="topnav" id="myTopnav">
+        <a href="gif.html">GIF</a>
+        <a href="jpg.html" class="active">JPG</a>
+        <a href="png.html">PNG</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+
+    </header>
+    <main>
+        <img src="images/dog%20jpg.jpeg" alt="Dog photograph">
+        <h2>Image Description</h2>
+        <p>This is a JPG image. JPG images are commonly used for photographs and can show many colors.</p>
+
+        <h2>Why I Chose This Image</h2>
+        <p>I chose this image because it shows how JPG is used for photos.</p>
+
+        <h2>Image Source</h2>
+        <p>
+            <a href="https://pixabay.com/photos/puppy-dog-pet-collar-dog-collar-1903313/" target="_blank" rel="noopener noreferrer">View Image Source</a>
+        </p>
+    </main>
+    <footer>
+        <p>CSIT 121 Lab 08</p>
+    </footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
