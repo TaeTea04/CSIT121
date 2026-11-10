@@ -51,8 +51,23 @@
     </style>
 
     <!--JavaScript-->
+    <!--
+AI Assistance: ChatGPT (OpenAI)
+Purpose: Modified the JavaScript to allow the employee table
+to toggle on and off when the button is clicked.
+The button text changes between "Get Employee Data"
+and "Close Employee Data" based on the table's visibility.
+-->
     <script>
         function loadXMLDoc() {
+            let table = document.getElementById("id");
+            let button = document.getElementById("toggleButton");
+
+            if (table.innerHTML !== "") {
+                table.innerHTML = "";
+                button.textContent = "Get Employee Data";
+                return;
+            }
             let xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
 
@@ -97,14 +112,15 @@
 
             // Print the xml data in table form
             document.getElementById("id").innerHTML = table;
+            document.getElementById("toggleButton").textContent = "Close Employee Data";
         }
     </script>
 </head>
 
 <body>
     <div class="button-container">
-        <button type="button" class="button" onclick="loadXMLDoc()">
-            Get Employees Details
+        <button type="button" class="button" id="toggleButton" onclick="loadXMLDoc()">
+            Get Employee Data
         </button>
     </div>
 
