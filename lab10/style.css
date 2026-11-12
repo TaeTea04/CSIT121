@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url("images/background.png");
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: purple;
+    text-align: center;
+    padding: 15px;
+}
+
+nav { 
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a { 
+    color: white;
+    margin: 10px;
+}
+
+main {
+    background-color: black;
+    padding: 20px;
+    margin: 30px;
+}
+
+h2 {
+    color: violet;
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    padding: 10px;
+}
